@@ -147,26 +147,22 @@
               <option value="bunny">Bunny</option>
             </select><br><br>
 
-            <label for="rating">Rate the meeting:</label><br>
-            <input type="radio" id="rating-excellent">
-            <label for="excellent">Excellent</label><br>
-            <input type="radio" id="rating-good">
-            <label for="good">Good</label><br>
-            <input type="radio" id="rating-average">
-            <label for="average">Average</label><br><br>
+            <label for="rate">Rate the meeting:</label><br>
+            <input type="radio" id="excellent"> 
+            <label for="excellent" id="excellent">Excellent</label><br>
+            <input type="radio" id="good">
+            <label for="good" id="good">Good</label><br>
+            <input type="radio" id="average">
+            <label for="average" id="average">Average</label><br><br>
 
-            <label for="next">Which meetings this month can you attend?</label><br>
-            <input type="checkbox" id="next-first">
-            <label for="first">First Tuesday</label><br>
-            <input type="checkbox" id="next-second">
-            <label for="second">Second Thursday</label><br>
-            <input type="checkbox" id="next-third">
-            <label for="third">Third Wednesday</label><br>
-            <input type="checkbox" id="next-fourth">
-            <label for="fourth">Fourth Tuesday</label><br><br>
-            <label for="feedback">Questions:</label><br>
-            <textarea name="feedback" id="feedback"></textarea><br><br>
-            <button type="submit">Submit</button>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Mark yes if you like chocolate</label><br><br>
+
+            <label for="feedback">Feedback:</label><br>
+            <textarea id="feedback" name="feedback" placeholder="Enter your feedback here..."></textarea><br><br>
+
+            <input type="submit" value="Submit">
+            
           </fieldset>
         </form>
       </section>
