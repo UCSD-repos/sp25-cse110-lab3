@@ -1,0 +1,177 @@
+<!-- 
+- a title (e.g. "Pomodoro Timer First Brainstorm")
+- subtitle for the meeting section/the topic of the meeting (e.g. "brainstorming", "check-ins", "documentation")
+- subtitle for the date
+- attendance list
+- agenda of what the meeting will cover
+- things that were unfinished business from last meeting
+- things that are new business that need to be talked about
+- any miscellaneous comments / questions / concerns that anyone would like to bring up
+- pictures of any diagrams / architecture / things that were presented
+- SWE meetings often have people diagram things on a whiteboard so we want those captured as well
+- For the following two, you can simply take a 30 second pretend audio recording & video recording to use, we are just trying to get you familiar with the <audio> and <video> elements. Yes, you must have both audio and video elements, and yes, you can use the audio from the video you took for the audio element, it just has to be in a separate audio file.
+    - audio recording the meeting
+    - video recording of the meeting -->
+    
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Minutes</title>
+    <meta name="author" content="Aditi Verma">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#Home">Home</a> |
+        <a href="#Agenda">Agenda</a> |
+        <a href="#Unfinished-Business">Unfinished Business</a> |
+        <a href="#New-Business">New Business</a> |
+        <a href="#Miscellaneous">Miscellaneous</a> |
+      </nav>
+      <hr>
+      <div id="Home"></div>
+      <u><h1>Meeting Minutes</h1></u>
+      <h2>Board Meeting - Brainstorming</h2>
+      <h3>Date: April 14, 2025</h3>
+      <h3>Attendance:</h3>
+      <ul>
+        <span>John Doe, </span>
+        <span>Jane Smith, </span>
+        <span>Emily Johnson</span>
+      </ul>
+    </header>
+    <main>
+      <section>
+        <hr>
+        <div id="Agenda"></div>
+        <span></span>
+        <b><h2>Agenda</h2></b>
+        <ol>
+          <li>Unfinished Business</li>
+            <ul>
+              <li>Review last meeting's action items</li>
+              <li>Discuss feedback on project proposals</li>
+            </ul>
+          <li>New Business</li>
+            <ul>
+              <li>Brainstorm new project ideas</li>
+              <li>Set deadlines for upcoming tasks</li>
+            </ul>
+          <li>Miscellaneous</li>
+          <ul>
+            <li>Questions or concerns</li>
+            <li>Images</li>
+            <li>Audio</li>
+            <li>Video</li>
+          </ul>
+        </ol>
+      </section>
+      <section>
+        <hr>
+        <div id="Unfinished-Business"></div>
+        <h2>Unfinished Business</h2>
+        <p>
+          Last week we discussed the progress of the website. <br>
+          We need to finalize the design and layout before moving forward. <br>
+          We also need to review the feedback on the project proposals.
+        </p>
+      </section>
+      <section>
+        <div id="New-Business"></div>
+        <h2>New Business</h2>
+        <p>
+          Moving forward, we need to brainstorm new project ideas. <br>
+          To do so, we will set deadlines for tasks. <br>
+          <u>Project 2:</u> <strong>due May 21st, 2025</strong>
+        </p>
+      <section>
+        <div id="Miscellaneous"></div>
+        <h2>Miscellaneous</h2>
+        <p>
+          <b>Q: </b><i>Jane - </i> What is the deadline for Project 2? <br>
+          <b>A: </b><i>John - </i> The deadline is <em>May 21st, 2025.</em> <br>
+        </p>
+        <details>
+          <summary>Images</summary>
+            <img src="img.jpg" alt="image" width="500" height="600">
+        </details>
+        <br>
+        <details>
+          <summary>Audio files here</summary>
+            <audio controls>
+              <source src="audio.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+        </details>
+        <br>
+        <details>
+          <summary>Videos here</summary>
+            <video width="320" height="240" controls>
+              <source src="video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+        </details>
+        <br><hr>
+      </section>
+      <section>
+        <form>
+          <fieldset>
+            <legend>Form</legend><br>
+            <label for="name">Name:</label><br>
+            <input type="text"><br><br>
+                        
+            <label for="date">Date:</label><br>
+            <input type="date"><br><br> 
+            
+            <label for="browser">Choose your snack of choice:</label>
+            <input list="browsers"><br><br>
+
+            <datalist id="browsers">
+              <option value="Pretzel">
+              <option value="Chips">
+              <option value="Cookies">
+              <option value="Breadsticks">
+              <option value="Popcorn">
+            </datalist>
+
+            <label for="animal">Choose an animal:</label>
+
+            <select name="animal" id="animal">
+              <option value="none">select</option>
+              <option value="cat">Cat</option>
+              <option value="dog">Dog</option>
+              <option value="hedgehog">Hedgehog</option>
+              <option value="bunny">Bunny</option>
+            </select><br><br>
+
+            <label for="rating">Rate the meeting:</label><br>
+            <input type="radio">
+            <label for="excellent">Excellent</label><br>
+            <input type="radio">
+            <label for="good">Good</label><br>
+            <input type="radio">
+            <label for="average">Average</label><br><br>
+
+            <label for="next">Which meetings this month can you attend?</label><br>
+            <input type="checkbox">
+            <label for="excellent">First Tuesday</label><br>
+            <input type="checkbox">
+            <label for="excellent">Second Thursday</label><br><input type="checkbox">
+            <label for="excellent">Third Wednesday</label><br><input type="checkbox">
+            <label for="excellent">Fourth Tuesday</label><br><br>
+            <label for="feedback">Questions:</label><br>
+            <textarea name="feedback"></textarea><br><br>
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer>
+  
+    </footer>
+    <main>
+      
+    </main>
+  </body>
+</html>
