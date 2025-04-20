@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* dot */
+* {
+    margin: 10px;
+}
+
+:root {
+    --primary-color: aquamarine; 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.element::before {
+    content: "Moving forward, we need to brainstorm new project ideas."
+}
+
+li[class='list'] {
+    color: color(display-p3 0 0 1); 
+    font-weight: bold;
+    text-align: left;
+}
+
+.nav {
+    color: hsl(0, 0%, 0%);
+    text-decoration: none;
+    font-size: 18px;
+    height: 50px;
+    width: 200px;
+    max-width: 300px; 
+    min-width: 150px; 
+}
+
+/* :hover */
+nav .nav:hover {
+    color: rgb(255, 0, 0);
+    font-style: italic;
+}
+
+h1, h2, h3 {
+    color: black;
+    font-family: helvetica;
+    margin-top: 20px;
+    margin-bottom: 10px; 
+    margin-left: 15px; 
+    margin-right: 15px; 
+    margin: 20px auto; 
+    
+}
+
+ol > li > ul {
+    list-style-type: square; 
+}
+
+h2 ~ p {
+    background-color: #f0f0f0; 
+    border-radius: 20px;
+    border-color: var(--primary-color, blue);
+    border-style: outset;
+    border-width: 1px;
+    padding: 30px;
+    position: relative;
+}
+
+h2 + p {
+    margin-top: 10px; 
+}
+
+h2:has(+ p) {
+    text-decoration: underline;
+}
+
+form {
+    display: block; 
+    margin: 20px auto;
+    width: 50%;
+}
+
+form:hover {
+    background-color: #f9f9f9;
+    border: 2px solid var(--primary-color, aquamarine);
+}
+
+button {
+    display: inline-block; 
+    padding: 10px 20px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: lightgray;
+    transform: scale(0.95);
+    border-color: darkgray;
+}
+
+.hidden {
+    display: none; 
+}
+
+.inline-text {
+    display: inline; 
+    color: darkblue;
+}
+
+.flex-container {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 2%; 
+    border: 1px solid gray;
+}
+
+.item {
+    flex: 1; 
+    text-align: center;
+    padding: 1.5em; 
+    border: 1px solid black;
+    background-color: pink;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 1vw; 
+    border: 1px solid black;
+}
+
+.grid-item {
+    background-color: paleturquoise;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid darkgray; 
+    width: 300px; 
+    
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.footer {
+    position: absolute;
+}
+
+#Miscellaneous {
+    color: #FF5733; 
+}

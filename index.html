@@ -13,23 +13,41 @@
     - audio recording the meeting
     - video recording of the meeting -->
     
+<!-- 
+Universal Selector (*)
+Element Selector (element) 
+Attribute Selector (e.g. [attribute=foo])     
+Pseudo-class Selector (e.g. p:hover)
+Selector List (element, element)                   /* select multiple elements */
+Combinators (you must use one of each)    /* specify selections based on element positioning in the DOM tree */
+Descendant Combinator (element element)
+Child Combinator (element > element)
+General sibling combinator (element ~ element)
+Adjacent sibling combinator (element + element)
+Combining Two Selectors (element.class)
+New Selectors /*Adopted in December 2023!*/
+:has()  /*You must use this selector. Click hereLinks to an external site. for how to use. This is a new selector that was widely adopted in 2023.*/
+Nested Selectors
+Nested selectors are another type of selector that have recently been adopted in 2023. HereLinks to an external site. is some more information about this selector. Please also include at least one type of this selector in your CSS. -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Minutes</title>
     <meta name="author" content="Aditi Verma">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="index.css">
   </head>
   <body>
     <header>
       <nav>
-        <a href="#Home">Home</a> |
-        <a href="#Agenda">Agenda</a> |
-        <a href="#Unfinished-Business">Unfinished Business</a> |
-        <a href="#New-Business">New Business</a> |
-        <a href="#Miscellaneous">Miscellaneous</a> |
+        <a class="nav" href="#Home">Home</a> |
+        <a class="nav" href="#Agenda">Agenda</a> |
+        <a class="nav" href="#Unfinished-Business">Unfinished Business</a> |
+        <a class="nav" href="#New-Business">New Business</a> |
+        <a class="nav" href="#Miscellaneous">Miscellaneous</a> |
       </nav>
       <hr>
+      <br>
       <div id="Home"></div>
       <h1><u>Meeting Minutes</u></h1>
       <h2>Board Meeting - Brainstorming</h2>
@@ -48,8 +66,8 @@
         <ol>
           <li>Unfinished Business
             <ul>
-              <li>Review last meeting's action items</li>
-              <li>Discuss feedback on project proposals</li>
+              <li class="list">Review last meeting's action items</li>
+              <li class="list">Discuss feedback on project proposals</li>
             </ul>
           </li>
           <li>New Business
@@ -78,11 +96,11 @@
           We also need to review the feedback on the project proposals.
         </p>
       </section>
-      <section>
+      <section class="new">
         <div id="New-Business"></div>
         <h2>New Business</h2>
-        <p>
-          Moving forward, we need to brainstorm new project ideas. <br>
+        <p class="element">
+           <br>
           To do so, we will set deadlines for tasks. <br>
           <u>Project 2:</u> <strong>due May 21st, 2025</strong>
         </p>
@@ -165,6 +183,23 @@
             
           </fieldset>
         </form>
+      </section>
+      <section>
+        <div class="flex-container">
+          <div class="item">flex</div>
+          <div class="item">flex</div>
+          <div class="item">flex</div>
+        </div>
+      </section>
+      <section>
+        <div class="grid">
+          <div class="grid-item">grid</div>
+          <div class="grid-item">grid</div>
+          <div class="grid-item">grid</div>
+          <div class="grid-item">grid</div>
+          <div class="grid-item">grid</div>
+          <div class="grid-item">grid</div>
+        </div>
       </section>
     </main>
     <footer>
