@@ -23,6 +23,7 @@ li[class='list'] {
     text-align: left;
 }
 
+/* apply style to navigation links */
 .nav {
     color: hsl(0, 0%, 0%);
     text-decoration: none;
@@ -50,6 +51,7 @@ h1, h2, h3 {
     
 }
 
+/* used descendant */
 ol > li > ul {
     list-style-type: square; 
 }
@@ -72,6 +74,7 @@ h2:has(+ p) {
     text-decoration: underline;
 }
 
+/* form style */
 form {
     display: block; 
     margin: 20px auto;
