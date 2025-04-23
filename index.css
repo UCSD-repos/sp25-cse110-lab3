@@ -82,7 +82,7 @@ form {
 }
 
 form:hover {
-    background-color: #f9f9f9;
+    color: color-mix(in srgb, red 70%, blue 30%);
     border: 2px solid var(--primary-color, aquamarine);
 }
 
